@@ -27,20 +27,29 @@ before moving on from this module.
 
 - Impure functions, their return value dont solely depend on its arguments, the same set of arguments might give you different return values.
 
-- [ ] Can describe operator precedence
-- [ ] Can describe the `push` Array method
-- [ ] Can describe the `pop` Array method
-- [ ] Can describe the `shift` Array method
-- [ ] Can describe the `unshift` Array method
-- [ ] Can describe the `each` Array method
-- [ ] Can describe the `map` Array method
-- [ ] Can describe the `filter` Array method
-- [ ] Can describe the `reduce` Array method
-- [ ] Can describe a closure
+- [x] Can describe operator precedence
+- Operator precedence determines the order in which operators are evaluated. Operators with higher precedence are evaluated first.
+
+- [x] Can describe the `push` Array method
+- [x] Can describe the `pop` Array method
+- [x] Can describe the `shift` Array method
+- [x] Can describe the `unshift` Array method
+- [x] Can describe the `each` Array method
+- [x] Can describe the `map` Array method
+
+- Creates a new array of the same length and with the modification we ask it to do.
+
+- [x] Can describe the `filter` Array method
+- Accepts another function as an argument that will use to return a filtered (usually smaller) version of the new array. Can modify and trim a new array.
+
+- [x] Can describe the `reduce` Array method
+- The way it works is similar to a mix of map and filter together.
+- [x] Can describe a closure
+- A function that can use the variables or elements around it at the time that it is created
 
 ### JavaScript Specific
 
-- [ ] Can write a Function in JavaScript
+- [x] Can write a Function in JavaScript
 - [ ] Can write an Object literal in JavaScript
 - [ ] Can write an Array literal in JavaScript
 - [ ] Can write an String literal in JavaScript
