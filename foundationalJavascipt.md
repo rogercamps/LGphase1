@@ -50,15 +50,15 @@ before moving on from this module.
 ### JavaScript Specific
 
 - [x] Can write a Function in JavaScript
-- [ ] Can write an Object literal in JavaScript
-- [ ] Can write an Array literal in JavaScript
-- [ ] Can write an String literal in JavaScript
-- [ ] Can write an Number literal in JavaScript
-- [ ] Can write and `if`/`else` statement in JavaScript
-- [ ] Can write and `switch` statement in JavaScript
-- [ ] Can write and `while` loop in JavaScript
-- [ ] Can write and `for` loop in JavaScript
-- [ ] Can write a pure function in JavaScript
+- [x] Can write an Object literal in JavaScript  
+- [x] Can write an Array literal in JavaScript
+- [x] Can write an String literal in JavaScript
+- [x] Can write an Number literal in JavaScript
+- [x] Can write and `if`/`else` statement in JavaScript
+- [x] Can write and `switch` statement in JavaScript
+- [x] Can write and `while` loop in JavaScript
+- [x] Can write and `for` loop in JavaScript
+- [x] Can write a pure function in JavaScript
 - [ ] Can set the value of a property on a JavaScript Object using `.` syntax
 - [ ] Can set the value of a property on a JavaScript Object using `[]` syntax
 - [ ] Can get the value of a property on a JavaScript Object using `.` syntax
