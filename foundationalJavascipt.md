@@ -27,51 +27,125 @@ before moving on from this module.
 
 - Impure functions, their return value dont solely depend on its arguments, the same set of arguments might give you different return values.
 
-- [ ] Can describe operator precedence
-- [ ] Can describe the `push` Array method
-- [ ] Can describe the `pop` Array method
-- [ ] Can describe the `shift` Array method
-- [ ] Can describe the `unshift` Array method
-- [ ] Can describe the `each` Array method
-- [ ] Can describe the `map` Array method
-- [ ] Can describe the `filter` Array method
-- [ ] Can describe the `reduce` Array method
-- [ ] Can describe a closure
+- [x] Can describe operator precedence
+- Operator precedence determines the order in which operators are evaluated. Operators with higher precedence are evaluated first.
+
+- [x] Can describe the `push` Array method
+- [x] Can describe the `pop` Array method
+- [x] Can describe the `shift` Array method
+- [x] Can describe the `unshift` Array method
+- [x] Can describe the `each` Array method
+- [x] Can describe the `map` Array method
+
+- Creates a new array of the same length and with the modification we ask it to do.
+
+- [x] Can describe the `filter` Array method
+- Accepts another function as an argument that will use to return a filtered (usually smaller) version of the new array. Can modify and trim a new array.
+
+- [x] Can describe the `reduce` Array method
+- The way it works is similar to a mix of map and filter together.
+- [x] Can describe a closure
+- A function that can use the variables or elements around it at the time that it is created
 
 ### JavaScript Specific
 
-- [ ] Can write a Function in JavaScript
-- [ ] Can write an Object literal in JavaScript
-- [ ] Can write an Array literal in JavaScript
-- [ ] Can write an String literal in JavaScript
-- [ ] Can write an Number literal in JavaScript
-- [ ] Can write and `if`/`else` statement in JavaScript
-- [ ] Can write and `switch` statement in JavaScript
-- [ ] Can write and `while` loop in JavaScript
-- [ ] Can write and `for` loop in JavaScript
-- [ ] Can write a pure function in JavaScript
-- [ ] Can set the value of a property on a JavaScript Object using `.` syntax
-- [ ] Can set the value of a property on a JavaScript Object using `[]` syntax
-- [ ] Can get the value of a property on a JavaScript Object using `.` syntax
-- [ ] Can get the value of a property on a JavaScript Object using `[]` syntax
-- [ ] Can describe the difference between `==` and `===` in JavaScript
-- [ ] Can describe the difference between `var`, `let`, and `const` in JavaScript
-- [ ] Can use `Array#push` in JavaScript
-- [ ] Can use `Array#pop` in JavaScript
-- [ ] Can use `Array#shift` in JavaScript
-- [ ] Can use `Array#unshift` in JavaScript
-- [ ] Can use `Array#forEach` in JavaScript
-- [ ] Can use `Array#map` in JavaScript
-- [ ] Can use `Array#filter` in JavaScript
-- [ ] Can use `Array#reduce` in JavaScript
-- [ ] Can declare local vs. global variables in JavaScript
-- [ ] Can get all the keys on a JavaScript object
-- [ ] Can get all the values on a JavaScript object
-- [ ] Can write a closure in JavaScript
+- [x] Can write a Function in JavaScript
+- [x] Can write an Object literal in JavaScript  
+- [x] Can write an Array literal in JavaScript
+- [x] Can write an String literal in JavaScript
+- [x] Can write an Number literal in JavaScript
+- [x] Can write and `if`/`else` statement in JavaScript
+- [x] Can write and `switch` statement in JavaScript
+- [x] Can write and `while` loop in JavaScript
+- [x] Can write and `for` loop in JavaScript
+- [x] Can write a pure function in JavaScript
+- [x] Can set the value of a property on a JavaScript Object using `.` syntax  
+```javascript
+  var obj = {
+    student1: 'Roger',
+    student2: 'Jordi'
+  }
+
+  console.log(obj.student1); -> returns Roger
+
+  obj.student1='Xevi';
+
+  console.log(obj.student1); -> returns Xevi
+```
+
+- [x] Can set the value of a property on a JavaScript Object using `[]` syntax
+```javascript
+  var obj = {
+    student1: 'Roger',
+    student2: 'Jordi'
+  }
+
+  console.log(obj.student1); -> returns Roger
+
+  obj['student1']='Xevi';
+
+  console.log(obj.student1); -> returns Xevi
+```
+- [x] Can get the value of a property on a JavaScript Object using `.` syntax
+```JavaScript
+  obj.student1
+```
+- [x] Can get the value of a property on a JavaScript Object using `[]` syntax
+```JavaScript
+  obj['student1']
+```
+- [x] Can describe the difference between `==` and `===` in JavaScript
+- == and === check if two values are equal to each other, == being not strict and === being strict. Being strict meaning that it doesn't only check the values but also the type of those values.
+
+- [x] Can describe the difference between `var`, `let`, and `const` in JavaScript
+- [x] Can use `Array#push` in JavaScript
+- [x] Can use `Array#pop` in JavaScript
+- [x] Can use `Array#shift` in JavaScript
+- [x] Can use `Array#unshift` in JavaScript
+- [x] Can use `Array#forEach` in JavaScript
+- [x] Can use `Array#map` in JavaScript
+- [x] Can use `Array#filter` in JavaScript
+- [x] Can use `Array#reduce` in JavaScript
+- [x] Can declare local vs. global variables in JavaScript
+- declared inside or outside of a function
+
+- [x] Can get all the keys on a JavaScript object
+- Object.keys(obj)
+
+- [x] Can get all the values on a JavaScript object
+- Object.values(obj)
+
+- [x] Can write a closure in JavaScript
+- function declared inside another function. Also called lexical scope.
+```JavaScript
+// Scope A
+  var myFunction = function () {
+    // Scope B
+    var name = 'Todd'; // defined in Scope B
+    var myOtherFunction = function () {
+      // Scope C: `name` is accessible here!
+    };
+  };
+```
+
 - [ ] Can pass multiple objects into a function using a plain object as a single argument, in JavaScript
-- [ ] Can describe lexical scope inheritance in JavaScript
-- [ ] Can split a string into an array in JavaScript
-- [ ] Can join an array into a string in JavaScript
+
+- [x] Can describe lexical scope inheritance in JavaScript
+- Lexical scope is easy to work with, any variables/objects/functions defined in its parent scope, are available in the scope chain. Lexical scope does not work backwards.
+``` JavaScript
+  var name = 'Todd';
+  var scope1 = function () {
+  // name is available here
+    var scope2 = function () {
+      // name is available here too
+      var scope3 = function () {
+        // name is also available here!
+      };
+    };
+  };
+```
+- [x] Can split a string into an array in JavaScript
+- [x] Can join an array into a string in JavaScript
 
 
 ## Glossary of Terms
